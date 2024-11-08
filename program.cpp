@@ -52,4 +52,26 @@ int main()
     {
         num = stod(input);
     }
+    cout << " The number " << input << " is: " << endl;
+    if (isNatural(num))
+    {
+        cout << "- A Natural number" << endl;
+    }
+    if (isWhole(num))
+    {
+        cout << "- A Whole number" << endl;
+    }
+    if (isInt(num))
+    {
+        cout << "- An Integer" << endl;
+    }
+    else if (!isIrrational(num))
+    {
+        cout << "- A Rational number" << endl;
+    }
+    else
+    {
+        cout << "- An Irrational number" << endl;
+    }
+    return 0;
 }
